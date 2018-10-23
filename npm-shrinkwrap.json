@@ -1,5 +1,5 @@
 {
-  "name": "openpgp",
+  "name": "@tripod/openpgp",
   "version": "4.1.2",
   "lockfileVersion": 1,
   "requires": true,
@@ -20,6 +20,49 @@
       "requires": {
         "samsam": "1.3.0"
       }
+    },
+    "@tripod/asmcrypto.js": {
+      "version": "2.3.0",
+      "resolved": "https://registry.npmjs.org/@tripod/asmcrypto.js/-/asmcrypto.js-2.3.0.tgz",
+      "integrity": "sha512-NYaHtYQ35kIwTOnAcFnRbAPMjM9EnCnKBvz+zoc9Iq4PmY+CulkP64sdjikBLHiisxEBNUbC8o64lTZwmWoEYA=="
+    },
+    "@tripod/compressjs": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@tripod/compressjs/-/compressjs-1.0.3.tgz",
+      "integrity": "sha512-rBI3q/m5V9GWGRAtMYk+wQLRr7a8dLL3lYahLCzVCp8bSUEt3c6V7upz8M477BamrFDh2hAjw93+0zhPHmfErw==",
+      "requires": {
+        "amdefine": "~1.0.0",
+        "commander": "~2.8.1"
+      },
+      "dependencies": {
+        "commander": {
+          "version": "2.8.1",
+          "resolved": "http://registry.npmjs.org/commander/-/commander-2.8.1.tgz",
+          "integrity": "sha1-Br42f+v9oMMwqh4qBy09yXYkJdQ=",
+          "requires": {
+            "graceful-readlink": ">= 1.0.0"
+          }
+        }
+      }
+    },
+    "@tripod/elliptic": {
+      "version": "6.4.0",
+      "resolved": "https://registry.npmjs.org/@tripod/elliptic/-/elliptic-6.4.0.tgz",
+      "integrity": "sha512-nIeQaJe5oOZz8M41eNfxfylt1cViq0uVKhewCHcs6j8Pc0cYgpGtRdtgr284ndFIr/YslZ+PjhFYcCIgfLPNTQ==",
+      "requires": {
+        "bn.js": "^4.4.0",
+        "brorand": "^1.0.1",
+        "hash.js": "^1.0.0",
+        "hmac-drbg": "^1.0.0",
+        "inherits": "^2.0.1",
+        "minimalistic-assert": "^1.0.0",
+        "minimalistic-crypto-utils": "^1.0.0"
+      }
+    },
+    "@tripod/web-stream-tools": {
+      "version": "0.0.1",
+      "resolved": "https://registry.npmjs.org/@tripod/web-stream-tools/-/web-stream-tools-0.0.1.tgz",
+      "integrity": "sha512-GqLA4vV2BW03JfbdlSNM/wYFXMn3CBnVjmM0UCt1Ht4vKFfmTGdgucRnoD3Gt8U9oWjSo0n0pw1ZjdAJHakKdw=="
     },
     "@types/whatwg-streams": {
       "version": "0.0.5",
@@ -273,10 +316,6 @@
       "resolved": "https://registry.npmjs.org/arrify/-/arrify-1.0.1.tgz",
       "integrity": "sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=",
       "dev": true
-    },
-    "asmcrypto.js": {
-      "version": "github:openpgpjs/asmcrypto#6e4e407b9b8ae317925a9e677cc7b4de3e447e83",
-      "from": "github:openpgpjs/asmcrypto"
     },
     "asn1": {
       "version": "0.2.3",
@@ -1829,24 +1868,6 @@
       "integrity": "sha512-BFnaq5ZOGcDN7FlrtBT4xxkgIToalIIxwjxLWVJ8bGTpe1LroqMiqQXdA7ygc7CRvaYS+9zfPGFnJqFSayx+AA==",
       "dev": true
     },
-    "compressjs": {
-      "version": "github:openpgpjs/compressjs#ce5ccbede61f075926081e29573c8a79ddf10d88",
-      "from": "github:openpgpjs/compressjs",
-      "requires": {
-        "amdefine": "~1.0.0",
-        "commander": "~2.8.1"
-      },
-      "dependencies": {
-        "commander": {
-          "version": "2.8.1",
-          "resolved": "https://registry.npmjs.org/commander/-/commander-2.8.1.tgz",
-          "integrity": "sha1-Br42f+v9oMMwqh4qBy09yXYkJdQ=",
-          "requires": {
-            "graceful-readlink": ">= 1.0.0"
-          }
-        }
-      }
-    },
     "concat-map": {
       "version": "0.0.1",
       "resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz",
@@ -2307,19 +2328,6 @@
       "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.52.tgz",
       "integrity": "sha1-0tnxJwuko7lnuDHEDvcftNmrXOA=",
       "dev": true
-    },
-    "elliptic": {
-      "version": "github:openpgpjs/elliptic#e187e706e11fa51bcd20e46e5119054be4e2a4a6",
-      "from": "github:openpgpjs/elliptic",
-      "requires": {
-        "bn.js": "^4.4.0",
-        "brorand": "^1.0.1",
-        "hash.js": "^1.0.0",
-        "hmac-drbg": "^1.0.0",
-        "inherits": "^2.0.1",
-        "minimalistic-assert": "^1.0.0",
-        "minimalistic-crypto-utils": "^1.0.0"
-      }
     },
     "email-addresses": {
       "version": "3.0.1",
@@ -7415,10 +7423,6 @@
           }
         }
       }
-    },
-    "web-stream-tools": {
-      "version": "github:openpgpjs/web-stream-tools#37c3542b11455856012b5ad87c39088457e2b3a1",
-      "from": "github:openpgpjs/web-stream-tools"
     },
     "websocket-driver": {
       "version": "0.7.0",
