@@ -75,7 +75,6 @@
     "whatwg-fetch": "^2.0.3"
   },
   "dependencies": {
-    "@mattiasbuelens/web-streams-polyfill": "0.1.0-alpha.4",
     "address-rfc2822": "^2.0.3",
     "asmcrypto.js": "npm:@tripod/asmcryptojs@2.3.0-compat",
     "asn1.js": "^5.0.0",
