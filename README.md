@@ -6,6 +6,13 @@ OpenPGP.js [![Build Status](https://travis-ci.org/openpgpjs/openpgpjs.svg?branch
 
 [![Saucelabs Test Status](https://saucelabs.com/browser-matrix/openpgpjs.svg)](https://saucelabs.com/u/openpgpjs)
 
+
+# NOTE
+
+> This is a forked version from the original that does not include browser support but provides all
+> source files in a node8 compatible way (without es6 modules). This is required when embedding
+> this great library in yet another bundle (for example for deploying to a serverless function)
+
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
