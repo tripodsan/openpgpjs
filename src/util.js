@@ -623,11 +623,11 @@ export default {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function() {
-    return require('buffer');
+    return require('buffer').Buffer;
   },
 
   getNodeStream: function() {
-    return require('stream');
+    return require('stream').Readable;
   },
 
   getHardwareConcurrency: function() {
