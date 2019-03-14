@@ -4,7 +4,6 @@ node_modules/
 npm*
 src/compression/
 test/lib/
-dist/
 dist/*.tgz
 dist/*_debug.js
 openpgp.store/
