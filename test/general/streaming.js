@@ -634,7 +634,7 @@ function tests() {
   });
 
   if (openpgp.util.detectNode()) {
-    const fs = util.nodeRequire('fs');
+    const fs = require('fs');
 
     it('Node: Encrypt and decrypt binary message roundtrip', async function() {
       dataArrived(); // Do not wait until data arrived.

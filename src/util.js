@@ -585,16 +585,16 @@ export default {
    * @param {String}     The module to require
    * @returns {Object}   The required module or 'undefined'
    */
-  nodeRequire: function(module) {
-    if (!util.detectNode()) {
-      return;
-    }
-
-    // Requiring the module dynamically allows us to access the native node module.
-    // otherwise, it gets replaced with the browserified version
-    // eslint-disable-next-line import/no-dynamic-require
-    return require(module);
-  },
+  // nodeRequire: function(module) {
+  //   if (!util.detectNode()) {
+  //     return;
+  //   }
+  //
+  //   // Requiring the module dynamically allows us to access the native node module.
+  //   // otherwise, it gets replaced with the browserified version
+  //   // eslint-disable-next-line import/no-dynamic-require
+  //   return require(module);
+  // },
 
   /**
    * Get native Node.js crypto api. The default configuration is to use
@@ -606,7 +606,7 @@ export default {
       return;
     }
 
-    return util.nodeRequire('crypto');
+    return require('crypto');
   },
 
   getNodeZlib: function() {
@@ -614,7 +614,7 @@ export default {
       return;
     }
 
-    return util.nodeRequire('zlib');
+    return require('zlib');
   },
 
   /**
@@ -623,16 +623,16 @@ export default {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function() {
-    return (util.nodeRequire('buffer') || {}).Buffer;
+    return require('buffer');
   },
 
   getNodeStream: function() {
-    return (util.nodeRequire('stream') || {}).Readable;
+    return require('stream');
   },
 
   getHardwareConcurrency: function() {
     if (util.detectNode()) {
-      const os = util.nodeRequire('os');
+      const os = require('os');
       return os.cpus().length;
     }
 
