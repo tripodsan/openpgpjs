@@ -51,9 +51,10 @@
 //   } catch(e) {}
 // }
 //
-// if (typeof TransformStream === 'undefined') {
-//   require('@mattiasbuelens/web-streams-polyfill');
-// }
+if (typeof TransformStream === 'undefined') {
+  require('web-streams-polyfill');
+}
+
 if (typeof TextEncoder === 'undefined') {
   const nodeUtil = require('util');
 

@@ -1,7 +1,7 @@
 {
   "name": "@tripod/openpgp",
   "description": "OpenPGP.js is a Javascript implementation of the OpenPGP protocol. This is defined in RFC 4880.",
-  "version": "4.1.2-node8-5",
+  "version": "4.1.2-node8-6",
   "license": "LGPL-3.0+",
   "homepage": "https://openpgpjs.org/",
   "engines": {
@@ -86,7 +86,8 @@
     "node-fetch": "^2.1.2",
     "node-localstorage": "~1.3.0",
     "pako": "^1.0.6",
-    "web-stream-tools": "npm:@tripod/web-stream-tools@0.0.1-node8-1"
+    "web-stream-tools": "npm:@tripod/web-stream-tools@0.0.1-node8-3",
+    "web-streams-polyfill": "^2.0.0"
   },
   "repository": {
     "type": "git",
