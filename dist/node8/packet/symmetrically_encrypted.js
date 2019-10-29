@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var _config = _interopRequireDefault(require("../config"));
 

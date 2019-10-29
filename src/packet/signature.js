@@ -25,7 +25,7 @@
  * @requires util
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import packet from './packet';
 import type_keyid from '../type/keyid.js';
 import type_mpi from '../type/mpi.js';

@@ -22,7 +22,7 @@
  * @module packet/clone
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import { Key } from '../key';
 import { Message } from '../message';
 import { CleartextMessage } from '../cleartext';

@@ -26,7 +26,7 @@
 
 import { AES_CFB } from 'asmcrypto.js/dist_compat/aes/cfb';
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import config from '../config';
 import crypto from '../crypto';
 import enums from '../enums';

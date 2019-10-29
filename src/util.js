@@ -27,7 +27,7 @@
  */
 
 import rfc2822 from 'address-rfc2822';
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import config from './config';
 import util from './util'; // re-import module to access util functions
 import b64 from './encoding/base64';

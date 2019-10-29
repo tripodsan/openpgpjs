@@ -18,7 +18,7 @@ exports.verify = verify;
 exports.encryptSessionKey = encryptSessionKey;
 exports.decryptSessionKeys = decryptSessionKeys;
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var messageLib = _interopRequireWildcard(require("./message"));
 

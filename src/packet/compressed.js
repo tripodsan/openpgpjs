@@ -25,7 +25,7 @@
  */
 
 import pako from 'pako';
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import config from '../config';
 import enums from '../enums';
 import util from '../util';

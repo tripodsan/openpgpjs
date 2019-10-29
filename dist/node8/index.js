@@ -211,7 +211,7 @@ var _kdf_params = _interopRequireDefault(require("./type/kdf_params"));
 
 var _oid = _interopRequireDefault(require("./type/oid"));
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var _armor = _interopRequireDefault(require("./encoding/armor"));
 

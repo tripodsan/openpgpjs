@@ -16,7 +16,7 @@ import sha224 from 'hash.js/lib/hash/sha/224';
 import sha384 from 'hash.js/lib/hash/sha/384';
 import sha512 from 'hash.js/lib/hash/sha/512';
 import { ripemd160 } from 'hash.js/lib/hash/ripemd';
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import md5 from './md5';
 import util from '../../util';
 

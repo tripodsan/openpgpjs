@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _cfb = require("asmcrypto.js/dist_compat/aes/cfb");
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var _config = _interopRequireDefault(require("../config"));
 

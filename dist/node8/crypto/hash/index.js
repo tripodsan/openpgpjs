@@ -17,7 +17,7 @@ var _3 = _interopRequireDefault(require("hash.js/lib/hash/sha/512"));
 
 var _ripemd = require("hash.js/lib/hash/ripemd");
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var _md = _interopRequireDefault(require("./md5"));
 

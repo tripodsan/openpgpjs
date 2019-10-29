@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _addressRfc = _interopRequireDefault(require("address-rfc2822"));
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var _config = _interopRequireDefault(require("./config"));
 

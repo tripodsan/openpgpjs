@@ -12,7 +12,7 @@ exports.read = read;
 exports.fromText = fromText;
 exports.fromBinary = fromBinary;
 
-var _webStreamTools = _interopRequireDefault(require("web-stream-tools"));
+var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 
 var _armor = _interopRequireDefault(require("./encoding/armor"));
 
