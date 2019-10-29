@@ -28,7 +28,7 @@
  */
 
 import BN from 'bn.js';
-import { ec as EC, eddsa as EdDSA } from 'elliptic';
+import { ec as EC, eddsa as EdDSA } from '@tripod/elliptic';
 import KeyPair from './key';
 import random from '../../random';
 import enums from '../../../enums';

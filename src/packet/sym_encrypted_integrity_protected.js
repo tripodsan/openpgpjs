@@ -24,7 +24,7 @@
  * @requires util
  */
 
-import { AES_CFB } from 'asmcrypto.js/dist_compat/aes/cfb';
+import { AES_CFB } from '@tripod/asmcrypto.js/dist_compat/aes/cfb';
 
 import stream from '@tripod/web-stream-tools';
 import config from '../config';

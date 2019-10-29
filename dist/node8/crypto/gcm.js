@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _gcm = require("asmcrypto.js/dist_compat/aes/gcm");
+var _gcm = require("@tripod/asmcrypto.js/dist_compat/aes/gcm");
 
 var _util = _interopRequireDefault(require("../util"));
 

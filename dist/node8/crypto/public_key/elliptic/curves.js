@@ -9,7 +9,7 @@ exports.nodeCurves = exports.webCurves = exports.curves = exports.default = void
 
 var _bn = _interopRequireDefault(require("bn.js"));
 
-var _elliptic = require("elliptic");
+var _elliptic = require("@tripod/elliptic");
 
 var _key = _interopRequireDefault(require("./key"));
 

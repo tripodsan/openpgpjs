@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _cfb = require("asmcrypto.js/dist_compat/aes/cfb");
+var _cfb = require("@tripod/asmcrypto.js/dist_compat/aes/cfb");
 
 var _webStreamTools = _interopRequireDefault(require("@tripod/web-stream-tools"));
 

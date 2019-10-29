@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = CMAC;
 
-var _cbc = require("asmcrypto.js/dist_compat/aes/cbc");
+var _cbc = require("@tripod/asmcrypto.js/dist_compat/aes/cbc");
 
 var _util = _interopRequireDefault(require("../util"));
 

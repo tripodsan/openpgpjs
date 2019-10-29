@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _sha = require("asmcrypto.js/dist_compat/hash/sha1/sha1");
+var _sha = require("@tripod/asmcrypto.js/dist_compat/hash/sha1/sha1");
 
-var _sha2 = require("asmcrypto.js/dist_compat/hash/sha256/sha256");
+var _sha2 = require("@tripod/asmcrypto.js/dist_compat/hash/sha256/sha256");
 
 var _ = _interopRequireDefault(require("hash.js/lib/hash/sha/224"));
 

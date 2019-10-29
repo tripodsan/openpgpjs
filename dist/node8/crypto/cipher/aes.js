@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _ecb = require("asmcrypto.js/dist_compat/aes/ecb");
+var _ecb = require("@tripod/asmcrypto.js/dist_compat/aes/ecb");
 
 /**
  * @requires asmcrypto.js
