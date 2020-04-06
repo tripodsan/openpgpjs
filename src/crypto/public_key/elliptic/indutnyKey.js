@@ -60,20 +60,7 @@ async function loadEllipticPromise() {
 let ellipticPromise;
 
 function loadElliptic() {
-  if (!config.external_indutny_elliptic) {
-    return require('elliptic');
-  }
-  if (util.detectNode()) {
-    // eslint-disable-next-line
-    return require(config.indutny_elliptic_path);
-  }
-  if (!ellipticPromise) {
-    ellipticPromise = loadEllipticPromise().catch(e => {
-      ellipticPromise = undefined;
-      throw e;
-    });
-  }
-  return ellipticPromise;
+  return require('elliptic');
 }
 
 export async function getIndutnyCurve(name) {
