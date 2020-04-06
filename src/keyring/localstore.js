@@ -24,7 +24,7 @@
  * @module keyring/localstore
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import config from '../config';
 import { readArmored } from '../key';
 import util from '../util';

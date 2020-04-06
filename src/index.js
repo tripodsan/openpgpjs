@@ -104,7 +104,7 @@ export { default as OID } from './type/oid';
  * @see streams
  * @name module:openpgp.stream
  */
-export { default as stream } from 'web-stream-tools';
+export { default as stream } from '@tripod/web-stream-tools';
 
 /**
  * @see module:encoding/armor

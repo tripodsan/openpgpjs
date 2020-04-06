@@ -8,7 +8,7 @@
  * @requires util
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import * as packets from './all_packets';
 import packetParser from './packet';
 import config from '../config';

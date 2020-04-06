@@ -24,7 +24,7 @@
  * @requires util
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import config from '../config';
 import crypto from '../crypto';
 import enums from '../enums';

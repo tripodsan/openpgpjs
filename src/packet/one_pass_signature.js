@@ -23,7 +23,7 @@
  * @requires util
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import Signature from './signature';
 import type_keyid from '../type/keyid';
 import enums from '../enums';

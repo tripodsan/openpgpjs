@@ -25,8 +25,8 @@
  */
 
 import pako from 'pako';
-import Bunzip from 'seek-bzip';
-import stream from 'web-stream-tools';
+import Bunzip from '@tripod/seek-bzip';
+import stream from '@tripod/web-stream-tools';
 import config from '../config';
 import enums from '../enums';
 import util from '../util';
