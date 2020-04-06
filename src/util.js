@@ -584,40 +584,16 @@ export default {
   },
 
   /**
-   * Get native Node.js module
-   * @param {String}     The module to require
-   * @returns {Object}   The required module or 'undefined'
-   */
-  nodeRequire: function(module) {
-    if (!util.detectNode()) {
-      return;
-    }
-
-    // Requiring the module dynamically allows us to access the native node module.
-    // otherwise, it gets replaced with the browserified version
-    // eslint-disable-next-line import/no-dynamic-require
-    return require(module);
-  },
-
-  /**
    * Get native Node.js crypto api. The default configuration is to use
    * the api when available. But it can also be deactivated with config.use_native
    * @returns {Object}   The crypto module or 'undefined'
    */
   getNodeCrypto: function() {
-    if (!config.use_native) {
-      return;
-    }
-
-    return util.nodeRequire('crypto');
+    return require('crypto');
   },
 
   getNodeZlib: function() {
-    if (!config.use_native) {
-      return;
-    }
-
-    return util.nodeRequire('zlib');
+    return require('zlib');
   },
 
   /**
@@ -626,20 +602,16 @@ export default {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function() {
-    return (util.nodeRequire('buffer') || {}).Buffer;
+    return Buffer;
   },
 
   getNodeStream: function() {
-    return (util.nodeRequire('stream') || {}).Readable;
+    return require('stream').Readable;
   },
 
   getHardwareConcurrency: function() {
-    if (util.detectNode()) {
-      const os = util.nodeRequire('os');
-      return os.cpus().length;
-    }
-
-    return navigator.hardwareConcurrency || 1;
+    const os = require('os');
+    return os.cpus().length;
   },
 
   isEmailAddress: function(data) {
