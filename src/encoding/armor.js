@@ -24,7 +24,7 @@
  * @module encoding/armor
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import base64 from './base64.js';
 import enums from '../enums.js';
 import config from '../config';

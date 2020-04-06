@@ -11,13 +11,13 @@
  * @module crypto/hash
  */
 
-import { Sha1 } from 'asmcrypto.js/dist_es5/hash/sha1/sha1';
-import { Sha256 } from 'asmcrypto.js/dist_es5/hash/sha256/sha256';
+import { Sha1 } from '@tripod/asmcrypto.js/dist_compat/hash/sha1/sha1';
+import { Sha256 } from '@tripod/asmcrypto.js/dist_compat/hash/sha256/sha256';
 import sha224 from 'hash.js/lib/hash/sha/224';
 import sha384 from 'hash.js/lib/hash/sha/384';
 import sha512 from 'hash.js/lib/hash/sha/512';
 import { ripemd160 } from 'hash.js/lib/hash/ripemd';
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import md5 from './md5';
 import config from '../../config';
 import util from '../../util';

@@ -29,7 +29,7 @@
  * @module message
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import armor from './encoding/armor';
 import type_keyid from './type/keyid';
 import config from './config';

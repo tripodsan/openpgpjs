@@ -17,7 +17,7 @@
  * @module encoding/base64
  */
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import util from '../util';
 
 const Buffer = util.getNodeBuffer();

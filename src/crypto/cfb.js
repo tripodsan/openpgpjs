@@ -24,9 +24,9 @@
  * @module crypto/cfb
  */
 
-import { AES_CFB } from 'asmcrypto.js/dist_es5/aes/cfb';
+import { AES_CFB } from '@tripod/asmcrypto.js/dist_compat/aes/cfb';
 
-import stream from 'web-stream-tools';
+import stream from '@tripod/web-stream-tools';
 import cipher from './cipher';
 import config from '../config';
 import util from '../util';
