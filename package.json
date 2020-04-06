@@ -13,24 +13,25 @@
     "gpg",
     "openpgp"
   ],
-  "main": "dist/openpgp.js",
+  "main": "dist/node8/index.js",
   "directories": {
     "lib": "src"
   },
   "files": [
     "src/",
-    "dist/",
-    "test/unittests.js",
-    "test/general",
-    "test/crypto"
+    "dist/node8/"
   ],
   "scripts": {
+    "build-node8": "babel src -d dist/node8",
     "build": "grunt build --compat copy:openpgp_compat && grunt build --lightweight copy:openpgp_lightweight clean:js && grunt build",
     "pretest": "grunt",
     "test": "grunt test",
     "lint": "eslint src"
   },
   "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
     "@mattiasbuelens/web-streams-polyfill": "^0.3.1",
     "@tripod/asmcrypto.js": "^2.3.2-compat",
     "@tripod/seek-bzip": "1.0.5-openpgp",
